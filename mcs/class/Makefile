@@ -102,7 +102,8 @@ net_2_0_dirs := \
 	Microsoft.Build.Framework	\
 	Microsoft.Build.Utilities	\
 	Microsoft.Build.Engine		\
-	Microsoft.Build.Tasks
+	Microsoft.Build.Tasks		\
+	Microsoft.VisualBasic
 
 net_2_1_dirs := \
 	corlib			\
