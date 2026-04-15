@@ -80,6 +80,10 @@ testcorlib:
 
 compiler-tests:
 	$(MAKE) TEST_SUBDIRS="tests errors" run-test-profiles
+	$(MAKE) bmcs-tests
+
+bmcs-tests:
+	$(MAKE) PROFILE=net_2_0 TEST_SUBDIRS="bmcs/tests" run-test
 
 test-installed-compiler:
 	$(MAKE) TEST_SUBDIRS="tests errors" PROFILE=default TEST_RUNTIME=mono MCS=mcs run-test
